@@ -1,0 +1,90 @@
+﻿/* ======================
+   ZAJEDNIČKI STIL ZA SVE GUMBOVE
+   ====================== */
+
+.button,
+.back-button,
+.back-link {
+    display: block; /* svi u svojem redu */
+    width: 80%;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    border: 2px solid #555;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+    /* Hover efekt za sve gumbe */
+    .button:hover,
+    .back-button:hover,
+    .back-link:hover {
+        background-color: #d2d2d2;
+    }
+
+/* ======================
+   NASLOV POČETNE STRANICE
+   ====================== */
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+/* ======================
+   NASLOVNA SLIKA
+   ====================== */
+
+.main-image {
+    width: 80%;
+    max-width: 800px;
+    height: 280px;
+    margin: 0 auto 30px auto;
+    background-image: url("./images/solin_main.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #555;
+}
+/* ======================
+   GUMBI ISPOD NASLOVA
+   ====================== */
+
+.container.buttons {
+    text-align: center;
+}
+/* ======================
+   GALERIJA – SVE SLIKE ISTE VELIČINE
+   ====================== */
+
+.gallery {
+    text-align: center;
+}
+
+figure {
+    width: 80%;
+    max-width: 500px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+    figure img {
+        width: 100%;
+        aspect-ratio: 3 / 2; /* SVE slike ISTI OMJER */
+        object-fit: cover;
+        display: block;
+        border: 2px solid #555;
+    }
+
+figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+}
